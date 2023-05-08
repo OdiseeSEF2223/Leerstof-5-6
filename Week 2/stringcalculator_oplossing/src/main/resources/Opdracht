@@ -1,0 +1,26 @@
+# Opdracht StringCalulator
+Het is bedoeling dat je bij het uitwerken van deze opgave gebruik maakt van de programmeertaal Java en de IDE IntelliJ. Deze code moet ingediend worden voor de volgende les door deze te pushen naar deze github Repository. Deze opgave wordt in groepjes van 2 gemaakt. Het is niet noodzakelijk om voor deze opgaven elke keer dezelfde groep te vormen.
+
+Vergeet ook zeker niet een leerverslag toe te voegen zoals beschreven op Toledo.
+
+## Opgave
+Write a method `calculate` in the class `StringCalculator` that, given a delimited string, returns the sum of the numbers in the string.
+Check the `usefulCode` method for code snippets. Indicate for each test which requirement it checks.
+Requirements are implemented in this order:
+- [ ] A) create the class, the test class
+- [ ] B) create tests for req 1
+- [ ] C) create test for req 2; rerun ALL tests
+- [ ] D) create test for req 3
+- [ ] E) create test for req 4
+- [ ] F) create test for req 5
+- [ ] G) create test for req 6
+- [ ] H) create test for req 7
+
+## Requirements for the calculate method
+1. An empty string returns zero '' => 0
+2. A single number returns the value '1' => 1 '2' => 2
+3. Two numbers, comma delimited, returns the sum '1,2' => 3 '10,20' => 30
+4. Two numbers, newline delimited, returns the sum '1\n2' => 3
+5. Three numbers, delimited either way, returns the sum '1\n2,3\n4' => 10
+6. Negative numbers throw an exception with the message '-1,2,-3' => 'Cant be a negative number'
+7. Every number greater than 1000 is ignored   '5,1001' => 5

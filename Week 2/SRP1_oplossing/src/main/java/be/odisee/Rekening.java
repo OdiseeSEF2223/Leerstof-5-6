@@ -58,6 +58,9 @@ public class Rekening {
     }
 
     public void storten(double bedrag) {
+        if(bedrag < 0){
+            return;
+        }
         this.balans += bedrag;
     }
 
