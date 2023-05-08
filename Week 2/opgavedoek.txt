@@ -1,0 +1,21 @@
+
+/**
+* Req (2)
+*/
+class Cirkel {
+
+	/**
+	* Req (2)
+	*/
+	private int x;
+	private int y;
+	private double diameter;
+		
+	/**
+	* Req (3)
+	*/
+	public boolean overlap(Cirkel c){} // in dit geval verkies je dit
+	//OF
+	public static boolean overlap(Cirkel c1, Cirkel c2){}
+	
+}
