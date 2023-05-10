@@ -1,19 +1,18 @@
 package com.example.geheledeling;
 
-import javafx.fxml.FXML;
-import javafx.scene.control.TextField;
-import javafx.scene.text.Text;
-
 /**
- * Klasse om een gehele deling te doen
+ * De klasse beheert de logica om delingen uit te voeren (geen link meer naar de UI)
+ * hier kan dus wel mee getest worden
  */
 public class GeheleDeling {
 
-    @FXML
-    private TextField txtX;
-    @FXML
-    private TextField txtY;
-    @FXML
-    private TextField txtResult;
-
+    /**
+     * voert een gehele deling in
+     * @param x deeltal
+     * @param y deler
+     * @return resultaat van x/y (na afronden naar beneden)
+     */
+    int bereken(final double x, final double y){
+        return (int) (x/y);
+    }
 }

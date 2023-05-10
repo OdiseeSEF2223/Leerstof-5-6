@@ -5,7 +5,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane prefHeight="400.0" prefWidth="305.0" style="-fx-background-color: yellow;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.geheledeling.GeheleDeling">
+<AnchorPane prefHeight="400.0" prefWidth="305.0" style="-fx-background-color: yellow;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.geheledeling.GeheleDelingController">
     <children>
         <GridPane prefHeight="200.0" prefWidth="305.0">
             <columnConstraints>
