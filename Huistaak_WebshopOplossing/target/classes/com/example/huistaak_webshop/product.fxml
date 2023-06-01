@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<HBox spacing="10" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
+    <padding>
+        <Insets bottom="20" left="20" right="20" top="20" />
+    </padding>
+
+    <GridPane fx:id="producten">
+        <padding>
+            <Insets bottom="10" left="10" right="10" top="10" />
+        </padding>
+
+        <Button onAction="#addToCart" text="com.example.huistaak_webshop.Boek 1: 1 euro" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+        <Button onAction="#addToCart" text="com.example.huistaak_webshop.Boek 2: 2 euro" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+        <Button onAction="#addToCart" text="com.example.huistaak_webshop.Boek 3: 3 euro" GridPane.columnIndex="2" GridPane.rowIndex="0" />
+        <Button onAction="#addToCart" text="com.example.huistaak_webshop.Boek 4: 4 euro" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+        <Button onAction="#addToCart" text="com.example.huistaak_webshop.Boek 5: 5 euro" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+        <Button onAction="#addToCart" text="com.example.huistaak_webshop.Boek 6: 6 euro" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+        <Button onAction="#addToCart" text="com.example.huistaak_webshop.Boek 7: 7 euro" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+        <Button onAction="#addToCart" text="com.example.huistaak_webshop.Boek 8: 8 euro" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+        <Button onAction="#addToCart" text="com.example.huistaak_webshop.Boek 9: 9 euro" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+        <Button onAction="#addToCart" text="com.example.huistaak_webshop.Boek 10: 10 euro" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+        <Button onAction="#addToCart" text="com.example.huistaak_webshop.Boek 11: 11 euro" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+        <Button onAction="#addToCart" text="com.example.huistaak_webshop.Boek 12: 12 euro" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+      <columnConstraints>
+         <ColumnConstraints />
+         <ColumnConstraints />
+         <ColumnConstraints />
+      </columnConstraints>
+      <rowConstraints>
+         <RowConstraints />
+         <RowConstraints />
+         <RowConstraints />
+         <RowConstraints />
+      </rowConstraints>
+    </GridPane>
+
+    <VBox spacing="10">
+        <ListView fx:id="productListView" />
+        <HBox>
+            <Label>Totaal: </Label>
+            <Label fx:id="totaalPrijs" text="0"></Label>
+        </HBox>
+        <Button text="Bestel" onAction="#bestel" />
+    </VBox>
+</HBox>
